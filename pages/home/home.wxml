@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<m-swiper list="{{banners}}"></m-swiper>
+
+<!--推荐-->
+<m-recommend recommends="{{recommends}}"
+             bind:loadover="loadover"></m-recommend>
+
+<!--本周流行-->
+<view class="popular">
+  <image src="/assets/home/popular_bg.jpg" mode="widthFix"/>
+</view>
+
+<!--tab control的数据-->
+<m-tab-control titles="{{titles}}"
+               bind:tabclick="tabclick"
+               id="tab-control"
+               class="{{isFiexd?'fiexd':''}}"/>
+<!--tab control的停留效果的占位-->
+<m-tab-control titles="{{titles}}"
+               bind:tabclick="tabclick"
+               wx:if="{{isFiexd}}"/>
+
+<!--展示商品数据--->
+<m-goods goods="{{goods[currentType].list}}"
+         bind:itemClick="goodsItemClick"/>
+
+<!--回到顶部-->
+<m-backtop wx:if="{{showBacktop}}"></m-backtop>

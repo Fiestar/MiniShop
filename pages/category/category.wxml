@@ -1,0 +1,8 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+ <!-- 分类菜单 -->
+ <m-menu categorys="{{categorys}}"/>
+
+ <!--content-->
+ <m-content subcategorys="{{subcategorys}}" categoryDetail="{{categoryDetail}}"></m-content>
+</view>

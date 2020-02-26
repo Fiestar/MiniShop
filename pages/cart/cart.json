@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "m-select": "./childCpns/m-select/m-select",
+    "bottom-bar":"./childCpns/bottom-bar/bottom-bar"
+  },
+  "navigationBarTitleText": "购物车"
+}

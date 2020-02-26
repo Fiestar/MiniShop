@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "m-menu":"./childCpns/m-menu/m-menu",
+    "m-content": "./childCpns/m-content/m-content"
+  },
+  "navigationBarTitleText": "分类"
+}
